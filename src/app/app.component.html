@@ -1,9 +1,18 @@
-<h1>Angular Router App</h1>
+<h1><a routerLink="/">Angular Router App</a></h1>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Overlay Loading Components</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <button mat-raised-button
+            color="primary"
+            (click)="showOverlay()">Show Overlay</button>
+  </mat-card-content>
+</mat-card>
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
 <nav>
   <ul>
-    <li><a routerLink="/app-loader" routerLinkActive="active">First Component</a></li>
-    <li><a routerLink="/second-component" routerLinkActive="active">Second Component</a></li>
+    <li><a routerLink="/loader" routerLinkActive="active">First Component</a></li>
   </ul>
 </nav>
 <!-- The routed views render in the <router-outlet>-->
